@@ -32,7 +32,6 @@ body {
 
 .container { width: 100%; max-width: 900px; }
 
-/* Общая карточка */
 .panel {
     background: linear-gradient(145deg, #f0f2f5 0%, #e6e9ed 100%);
     border-radius: 30px;
@@ -51,7 +50,6 @@ h1 { font-size: 22px; margin-bottom: 20px; text-align: center; }
 h2 { font-size: 18px; margin-bottom: 15px; }
 h3 { font-size: 14px; margin-bottom: 10px; color: var(--muted); }
 
-/* Табы (переключатели) */
 .tabs {
     display: flex;
     gap: 10px;
@@ -80,7 +78,6 @@ h3 { font-size: 14px; margin-bottom: 10px; color: var(--muted); }
 }
 .tab-btn:hover:not(.active) { color: var(--text); }
 
-/* Формы */
 .input-group { margin-bottom: 18px; }
 .input-group label {
     display: block;
@@ -111,7 +108,6 @@ h3 { font-size: 14px; margin-bottom: 10px; color: var(--muted); }
                 inset -6px -6px 12px rgba(255,255,255,1);
 }
 
-/* Кнопки */
 .btn {
     display: inline-block;
     width: 100%;
@@ -143,12 +139,7 @@ h3 { font-size: 14px; margin-bottom: 10px; color: var(--muted); }
 }
 .btn:active { transform: translateY(1px); }
 
-.btn-small {
-    padding: 10px 18px;
-    font-size: 11px;
-    width: auto;
-    letter-spacing: 1.2px;
-}
+.btn-small { padding: 10px 18px; font-size: 11px; width: auto; letter-spacing: 1.2px; }
 .btn-light {
     background: linear-gradient(145deg, #f0f2f5, #e6e9ed);
     color: var(--text);
@@ -159,12 +150,9 @@ h3 { font-size: 14px; margin-bottom: 10px; color: var(--muted); }
     box-shadow: 6px 6px 14px rgba(174,183,194,0.7),
                 -6px -6px 14px rgba(255,255,255,1);
 }
-.btn-danger {
-    background: linear-gradient(135deg, #b03a2e, #7b241c);
-}
+.btn-danger { background: linear-gradient(135deg, #b03a2e, #7b241c); }
 .btn-danger:hover { background: linear-gradient(135deg, #c0392b, #922b21); }
 
-/* Сообщения */
 .msg {
     padding: 12px 18px;
     border-radius: 14px;
@@ -179,7 +167,6 @@ h3 { font-size: 14px; margin-bottom: 10px; color: var(--muted); }
 .msg.error { color: var(--red); }
 .msg.success { color: var(--green); }
 
-/* Карточки турниров */
 .tournaments-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -195,31 +182,10 @@ h3 { font-size: 14px; margin-bottom: 10px; color: var(--muted); }
 }
 .tournament-card:hover { transform: translateY(-3px); }
 
-.tournament-name {
-    font-size: 15px;
-    font-weight: 800;
-    color: var(--text);   
-    margin-bottom: 6px;
-    letter-spacing: 0.5px;
-}
-.tournament-game {
-    font-size: 12px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-.tournament-meta {
-    font-size: 12px;
-    color: var(--muted);
-    margin-bottom: 15px;
-}
-.tournament-players {
-    font-size: 11px;
-    color: var(--icon);
-    margin-bottom: 15px;
-    font-weight: 700;
-}
+.tournament-name { font-size: 15px; font-weight: 800; color: var(--text); margin-bottom: 6px; letter-spacing: 0.5px; }
+.tournament-game { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+.tournament-meta { font-size: 12px; color: var(--muted); margin-bottom: 15px; }
+.tournament-players { font-size: 11px; color: var(--icon); margin-bottom: 15px; font-weight: 700; }
 
 .badge {
     display: inline-block;
@@ -228,25 +194,19 @@ h3 { font-size: 14px; margin-bottom: 10px; color: var(--muted); }
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 1px;
-    background: var(--green);
     color: #FFF;
     text-transform: uppercase;
 }
 .badge.joined { background: var(--green); }
 .badge.open { background: var(--icon); }
 
-/* Таблица игроков */
 .table-wrap {
     overflow-x: auto;
     border-radius: 18px;
     box-shadow: var(--inset-l), var(--inset-d);
     padding: 10px;
 }
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-}
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
 table th {
     text-align: left;
     padding: 12px 15px;
@@ -265,28 +225,12 @@ table td {
 table tr:last-child td { border-bottom: none; }
 table tr:hover td { background: rgba(255,255,255,0.4); }
 
-/* Пустое состояние */
-.empty {
-    text-align: center;
-    padding: 40px 20px;
-    color: var(--muted);
-    font-size: 13px;
-}
-.empty svg {
-    width: 50px; height: 50px;
-    fill: #C8CDD4;
-    margin-bottom: 15px;
-}
+.empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
+.empty svg { width: 50px; height: 50px; fill: #C8CDD4; margin-bottom: 15px; }
 
 .hidden { display: none !important; }
 
-/* Статистика */
-.stats {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-}
+.stats { display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; }
 .stat-item {
     flex: 1;
     min-width: 120px;
@@ -296,24 +240,14 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
     box-shadow: var(--inset-l), var(--inset-d);
     text-align: center;
 }
-.stat-value {
-    font-size: 26px;
-    font-weight: 800;
-    color: var(--text);
-}
-.stat-label {
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-top: 5px;
-}
+.stat-value { font-size: 26px; font-weight: 800; color: var(--text); }
+.stat-label { font-size: 10px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; margin-top: 5px; }
 </style>
 </head>
 <body>
 <div class="container">
 
-    <!-- ============= ГЛАВНЫЕ ТАБЫ ============= -->
+    <!-- ============= ГЛАВНЫЕ ТАБЫ ============= -->  
     <div class="tabs">
         <button class="tab-btn active" onclick="switchMain('player')">👤 ИГРОК</button>
         <button class="tab-btn" onclick="switchMain('admin')">⚙️ АДМИН</button>
@@ -322,12 +256,24 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
     <!-- ============== ИГРОК ============== -->
     <div id="playerSection">
 
-        <!-- Вход / Регистрация -->
         <div class="panel" id="authPanel">
             <h1 id="authTitle">РЕГИСТРАЦИЯ</h1>
             <div class="msg" id="authMsg"></div>
+
+            <!-- Имя (только при регистрации) -->
+            <div class="input-group" id="nameWrap">
+                <label>Имя игрока</label>
+                <input type="text" id="authName" placeholder="Иван Петров" maxlength="50">
+            </div>
+
+            <!-- Телефон (только при регистрации) -->
+            <div class="input-group" id="phoneWrap">
+                <label>Номер телефона</label>
+                <input type="tel" id="authPhone" placeholder="+7 (___) ___-__-__" maxlength="18">
+            </div>
+
             <div class="input-group">
-                <label>Логин (Email)</label>
+                <label>Email</label>
                 <input type="email" id="authEmail" placeholder="player@mail.com">
             </div>
             <div class="input-group">
@@ -344,17 +290,16 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
             </button>
         </div>
 
-        <!-- Личный кабинет -->
         <div class="panel hidden" id="playerPanel">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
                 <h1 style="margin:0;">МОИ ТУРНИРЫ</h1>
                 <button class="btn btn-light btn-small" onclick="logout()">ВЫЙТИ</button>
             </div>
+            <div id="myProfile" style="margin-bottom:20px;"></div>
             <div class="msg" id="playerMsg"></div>
             <div id="myTournaments"></div>
         </div>
 
-        <!-- Доступные турниры -->
         <div class="panel hidden" id="tournamentsPanel">
             <h1>ДОСТУПНЫЕ ТУРНИРЫ</h1>
             <div class="msg" id="joinMsg"></div>
@@ -366,7 +311,6 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
     <!-- ============== АДМИН ============== -->
     <div id="adminSection" class="hidden">
 
-        <!-- Вход админа -->
         <div class="panel" id="adminAuthPanel">
             <h1>ВХОД АДМИНИСТРАТОРА</h1>
             <div class="msg" id="adminMsg"></div>
@@ -380,7 +324,6 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
             </p>
         </div>
 
-        <!-- Панель админа -->
         <div id="adminPanel" class="hidden">
 
             <div class="panel">
@@ -390,41 +333,21 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
                 </div>
 
                 <div class="stats">
-                    <div class="stat-item">
-                        <div class="stat-value" id="statPlayers">0</div>
-                        <div class="stat-label">Игроков</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value" id="statTournaments">0</div>
-                        <div class="stat-label">Турниров</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-value" id="statJoins">0</div>
-                        <div class="stat-label">Участий</div>
-                    </div>
+                    <div class="stat-item"><div class="stat-value" id="statPlayers">0</div><div class="stat-label">Игроков</div></div>
+                    <div class="stat-item"><div class="stat-value" id="statTournaments">0</div><div class="stat-label">Турниров</div></div>
+                    <div class="stat-item"><div class="stat-value" id="statJoins">0</div><div class="stat-label">Участий</div></div>
                 </div>
             </div>
 
-            <!-- Создание турнира -->
             <div class="panel">
                 <h2>СОЗДАТЬ ТУРНИР</h2>
                 <div class="msg" id="createMsg"></div>
-                <div class="input-group">
-                    <label>Название турнира</label>
-                    <input type="text" id="tName" placeholder="Например: Кубок Осени 2025">
-                </div>
-                <div class="input-group">
-                    <label>Игра</label>
-                    <input type="text" id="tGame" placeholder="Например: CS2, Dota 2, Valorant">
-                </div>
-                <div class="input-group">
-                    <label>Дата</label>
-                    <input type="date" id="tDate">
-                </div>
+                <div class="input-group"><label>Название турнира</label><input type="text" id="tName" placeholder="Например: Кубок Осени 2025"></div>
+                <div class="input-group"><label>Игра</label><input type="text" id="tGame" placeholder="Например: CS2, Dota 2, Valorant"></div>
+                <div class="input-group"><label>Дата</label><input type="date" id="tDate"></div>
                 <button class="btn" onclick="createTournament()">СОЗДАТЬ ТУРНИР</button>
             </div>
 
-            <!-- Таблица игроков -->
             <div class="panel">
                 <h2>ВСЕ ИГРОКИ</h2>
                 <div class="table-wrap">
@@ -432,6 +355,8 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
                         <thead>
                             <tr>
                                 <th>#</th>
+                                <th>Имя</th>
+                                <th>Телефон</th>
                                 <th>Email</th>
                                 <th>Дата регистрации</th>
                                 <th>Турниров</th>
@@ -443,7 +368,6 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
                 </div>
             </div>
 
-            <!-- Таблица турниров -->
             <div class="panel">
                 <h2>ВСЕ ТУРНИРЫ</h2>
                 <div class="table-wrap">
@@ -462,7 +386,6 @@ table tr:hover td { background: rgba(255,255,255,0.4); }
                 </div>
             </div>
 
-            <!-- Участники конкретного турнира -->
             <div class="panel">
                 <h2>УЧАСТНИКИ ТУРНИРА</h2>
                 <div class="input-group">
@@ -511,9 +434,45 @@ function setCurrentUser(email) { localStorage.setItem(DB.session, email); }
 function clearCurrentUser() { localStorage.removeItem(DB.session); }
 
 /* =========================================================
+   МАСКА ТЕЛЕФОНА
+   ========================================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const phoneInput = document.getElementById('authPhone');
+    if (!phoneInput) return;
+
+    phoneInput.addEventListener('input', formatPhone);
+    phoneInput.addEventListener('focus', () => {
+        if (!phoneInput.value) phoneInput.value = '+7 (';
+    });
+    phoneInput.addEventListener('blur', () => {
+        if (phoneInput.value === '+7 (' || phoneInput.value === '+7') phoneInput.value = '';
+    });
+});
+
+function formatPhone(e) {
+    let digits = e.target.value.replace(/\D/g, '');
+    if (digits.startsWith('8')) digits = '7' + digits.slice(1);
+    if (!digits.startsWith('7')) digits = '7' + digits;
+    digits = digits.slice(0, 11);
+
+    let result = '+7';
+    if (digits.length > 1) result += ' (' + digits.slice(1, 4);
+    if (digits.length >= 5) result += ') ' + digits.slice(4, 7);
+    if (digits.length >= 8) result += '-' + digits.slice(7, 9);
+    if (digits.length >= 10) result += '-' + digits.slice(9, 11);
+
+    e.target.value = result;
+}
+
+function isValidPhone(phone) {
+    const digits = phone.replace(/\D/g, '');
+    return digits.length === 11 && digits.startsWith('7');
+}
+
+/* =========================================================
    НАВИГАЦИЯ
    ========================================================= */
-let authMode = 'register'; // register | login
+let authMode = 'register';
 
 function switchMain(where) {
     document.querySelectorAll('.tab-btn').forEach((b, i) => {
@@ -521,20 +480,18 @@ function switchMain(where) {
     });
     document.getElementById('playerSection').classList.toggle('hidden', where !== 'player');
     document.getElementById('adminSection').classList.toggle('hidden', where !== 'admin');
-
     if (where === 'player') checkPlayerSession();
     if (where === 'admin') checkAdminSession();
 }
 
-/* =========================================================
-   АВТОРИЗАЦИЯ ИГРОКА
-   ========================================================= */
 function switchAuthMode() {
     authMode = authMode === 'register' ? 'login' : 'register';
     document.getElementById('authTitle').textContent = authMode === 'register' ? 'РЕГИСТРАЦИЯ' : 'ВХОД';
     document.getElementById('authBtn').textContent = authMode === 'register' ? 'ЗАРЕГИСТРИРОВАТЬСЯ' : 'ВОЙТИ';
     document.getElementById('switchAuthText').textContent = authMode === 'register' ? 'Уже есть аккаунт? Войти' : 'Нет аккаунта? Регистрация';
     document.getElementById('confirmWrap').classList.toggle('hidden', authMode === 'login');
+    document.getElementById('nameWrap').classList.toggle('hidden', authMode === 'login');
+    document.getElementById('phoneWrap').classList.toggle('hidden', authMode === 'login');
 }
 
 function showMsg(id, text, type) {
@@ -544,7 +501,12 @@ function showMsg(id, text, type) {
     setTimeout(() => el.classList.remove('show'), 4000);
 }
 
+/* =========================================================
+   АВТОРИЗАЦИЯ
+   ========================================================= */
 function authAction() {
+    const name = document.getElementById('authName').value.trim();
+    const phone = document.getElementById('authPhone').value.trim();
     const email = document.getElementById('authEmail').value.trim().toLowerCase();
     const pass = document.getElementById('authPass').value;
     const confirm = document.getElementById('authConfirm').value;
@@ -555,17 +517,29 @@ function authAction() {
     const users = getUsers();
 
     if (authMode === 'register') {
+        if (!name) return showMsg('authMsg', 'Укажите имя', 'error');
+        if (name.length < 2) return showMsg('authMsg', 'Имя слишком короткое', 'error');
+        if (!phone) return showMsg('authMsg', 'Укажите номер телефона', 'error');
+        if (!isValidPhone(phone)) return showMsg('authMsg', 'Некорректный номер телефона', 'error');
         if (pass !== confirm) return showMsg('authMsg', 'Пароли не совпадают', 'error');
         if (users.find(u => u.email === email)) return showMsg('authMsg', 'Email уже занят', 'error');
+        if (users.find(u => u.phone === phone)) return showMsg('authMsg', 'Этот номер уже зарегистрирован', 'error');
+
         users.push({
             id: Date.now(),
+            name,
+            phone,
             email,
-            password: btoa(pass), // простое кодирование
+            password: btoa(pass),
             created_at: new Date().toLocaleString('ru-RU')
         });
         setUsers(users);
         showMsg('authMsg', 'Успешно! Теперь войдите.', 'success');
-        setTimeout(() => switchAuthMode(), 1000);
+        setTimeout(() => {
+            switchAuthMode();
+            document.getElementById('authPass').value = '';
+            document.getElementById('authConfirm').value = '';
+        }, 1000);
     } else {
         const user = users.find(u => u.email === email);
         if (!user || user.password !== btoa(pass)) return showMsg('authMsg', 'Неверный email или пароль', 'error');
@@ -590,6 +564,7 @@ function checkPlayerSession() {
         authPanel.classList.add('hidden');
         playerPanel.classList.remove('hidden');
         tournamentsPanel.classList.remove('hidden');
+        renderProfile(user);
         renderMyTournaments();
         renderTournaments();
     } else {
@@ -597,6 +572,25 @@ function checkPlayerSession() {
         playerPanel.classList.add('hidden');
         tournamentsPanel.classList.add('hidden');
     }
+}
+
+function renderProfile(user) {
+    document.getElementById('myProfile').innerHTML = `
+        <div class="table-wrap" style="padding:15px 20px;">
+            <div style="display:flex;justify-content:space-between;padding:6px 0;">
+                <span style="color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;">Имя</span>
+                <b style="color:var(--text);font-size:13px;">${escapeHtml(user.name || '—')}</b>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:6px 0;">
+                <span style="color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;">Телефон</span>
+                <b style="color:var(--text);font-size:13px;">${escapeHtml(user.phone || '—')}</b>
+            </div>
+            <div style="display:flex;justify-content:space-between;padding:6px 0;">
+                <span style="color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;">Email</span>
+                <b style="color:var(--text);font-size:13px;">${escapeHtml(user.email)}</b>
+            </div>
+        </div>
+    `;
 }
 
 /* =========================================================
@@ -649,7 +643,9 @@ function joinTournament(tournamentId) {
         id: Date.now(),
         tournamentId,
         userId: user.id,
+        userName: user.name || '',
         userEmail: user.email,
+        userPhone: user.phone || '',
         joined_at: new Date().toLocaleString('ru-RU')
     });
     setJoins(joins);
@@ -768,7 +764,6 @@ function renderAdminData() {
     const tournaments = getTournaments();
     const joins = getJoins();
 
-    // Статистика
     document.getElementById('statPlayers').textContent = users.length;
     document.getElementById('statTournaments').textContent = tournaments.length;
     document.getElementById('statJoins').textContent = joins.length;
@@ -776,11 +771,13 @@ function renderAdminData() {
     // Таблица игроков
     const pt = document.getElementById('playersTable');
     if (users.length === 0) {
-        pt.innerHTML = `<tr><td colspan="5" style="text-align:center;color:var(--muted);padding:25px;">Нет игроков</td></tr>`;
+        pt.innerHTML = `<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:25px;">Нет игроков</td></tr>`;
     } else {
         pt.innerHTML = users.map((u, i) => `
             <tr>
                 <td>${i + 1}</td>
+                <td><b>${escapeHtml(u.name || '—')}</b></td>
+                <td>${escapeHtml(u.phone || '—')}</td>
                 <td>${escapeHtml(u.email)}</td>
                 <td>${u.created_at}</td>
                 <td>${joins.filter(j => j.userId === u.id).length}</td>
@@ -805,7 +802,7 @@ function renderAdminData() {
         `).join('');
     }
 
-    // Селект для просмотра участников
+    // Селект для участников турнира
     const sel = document.getElementById('selectTournament');
     sel.innerHTML = '<option value="">— Выберите турнир —</option>' +
         tournaments.map(t => `<option value="${t.id}">${escapeHtml(t.name)}</option>`).join('');
@@ -822,9 +819,15 @@ function renderTournamentPlayers() {
         return;
     }
     list.innerHTML = `<div class="table-wrap"><table>
-        <thead><tr><th>#</th><th>Email игрока</th><th>Дата записи</th></tr></thead>
+        <thead><tr><th>#</th><th>Имя</th><th>Телефон</th><th>Email</th><th>Дата записи</th></tr></thead>
         <tbody>${joins.map((j, i) => `
-            <tr><td>${i + 1}</td><td>${escapeHtml(j.userEmail)}</td><td>${j.joined_at}</td></tr>
+            <tr>
+                <td>${i + 1}</td>
+                <td><b>${escapeHtml(j.userName || '—')}</b></td>
+                <td>${escapeHtml(j.userPhone || '—')}</td>
+                <td>${escapeHtml(j.userEmail)}</td>
+                <td>${j.joined_at}</td>
+            </tr>
         `).join('')}</tbody>
     </table></div>`;
 }
